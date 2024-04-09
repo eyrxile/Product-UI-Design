@@ -29,19 +29,8 @@ body {
     align-items: center;
     width: 50%;
     height: 100%;
-    background: #212121;
-    transition: 0.3s linear;
-}
-
-.container .imgBx:before {
-    content: "Nike";
-    position: absolute;
-    top: 0px;
-    left: 24px;
-    color: #000;
-    opacity: 0.2;
-    font-size: 8em;
-    font-weight: 800;
+    background: #212121; /* Default background color for image section */
+    transition: background-color 0.3s ease; /* Transition for background color change */
 }
 
 .container .imgBx img {
@@ -50,6 +39,16 @@ body {
     transform: rotate(-30deg);
     left: -50px;
     transition: 0.9s linear;
+}
+.container .imgBx:before {
+    content: "NR";
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    color: #000;
+    opacity: 0.2;
+    font-size: 8em;
+    font-weight: 800;
 }
 
 .container .details {
@@ -67,7 +66,8 @@ body {
     padding: 0;
     font-size: 2.4em;
     line-height: 1em;
-    color: #444;
+    color: #444; /* Default text color */
+    transition: color 0.3s ease; /* Transition for text color change */
 }
 
 .container .details h2 span {
@@ -89,13 +89,13 @@ body {
     margin: 0;
     padding: 0;
     font-size: 2.5em;
-    color: #a2a2a2;
-    float: left;
+    color: #444; /* Default text color */
+    transition: color 0.3s ease; /* Transition for text color change */
 }
 
 .container .details button {
     background: #000;
-    color: #fff;
+    color: #000; /* Default text color */
     border: none;
     outline: none;
     padding: 15px 20px;
@@ -106,13 +106,14 @@ body {
     font-weight: 600;
     border-radius: 40px;
     float: right;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transitions for color changes */
 }
 
 .product-colors span {
     width: 26px;
     height: 26px;
     top: 7px;
-    margin-right: 12px;
+    margin-right: 5px;
     left: 10px;
     border-radius: 50%;
     position: relative;
@@ -120,16 +121,21 @@ body {
     display: inline-block;
 }
 
+/* Updated color classes */
 .black {
-    background: #000;
+    background: #c1cbd3;
 }
 
 .red {
-    background: #d5212e;
+    background: #522b3a;
 }
 
 .orange {
-    background: #f18557;
+    background: #aa937a;
+}
+
+.grey {
+    background: #6F7A82;
 }
 
 .product-colors .active:after {
